@@ -15,9 +15,16 @@
         @viteReactRefresh
         @vite(['resources/js/app.jsx', "resources/js/Pages/{$page['component']}.jsx"])
         @inertiaHead
+        <link rel="stylesheet" href="{{asset('front-end/css/template.dark.min.css')}}">
     </head>
-    <body class="font-sans antialiased">
+    <body class="">
         @inertia
         <script src="https://js.pusher.com/8.2.0/pusher.min.js"></script>
+
+        <script src="{{asset('front-end/js/libs/jquery.min.js')}}"></script>
+        <script src="{{asset('front-end/js/bootstrap/bootstrap.bundle.min.js')}}"></script>
+        <script src="{{asset('front-end/js/plugins/plugins.bundle.js')}}"></script>
+        <script src="{{asset('front-end/js/template.js')}}"></script>
+        <script src="{{asset('front-end/js/functions.js')}}"></script>
     </body>
 </html>
